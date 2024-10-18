@@ -9,12 +9,17 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
-  access_key = "my-access-key"
-  secret_key = "my-secret-key"
+  region     = ""
+  access_key = ""
+  secret_key = ""
 }
 
-# Create a VPC
-resource "aws_vpc" "example" {
-  cidr_block = "10.0.0.0/16"
+# Create an EC2 instance
+resource "aws_instance" "hello_ec2" {
+  ami           = "ami-06b21ccaeff8cd686"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
 }

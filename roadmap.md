@@ -9,8 +9,8 @@ Terraform is a tool for building, changing and versioning infrastructure easly a
 it takes config file and terraform state and ineract with cloud platforms through providers (probably  APIs).
 
 ## Lab0
-- Install Terraform
-- Authenticate to AWS
-- Hello world tf config
+- Install Terraform ✔️
+- Authenticate to AWS ✔️
+- Hello world tf config ✔️
 - Essential commands
 
